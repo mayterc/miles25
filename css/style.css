@@ -80,7 +80,7 @@ body {
 .hero {
     color: var(--blanco);
     text-align: center;
-    background-image: url("/assets/camion-gris-miles.png");
+    background-image: url("../assets/camion-gris-miles.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size:cover;

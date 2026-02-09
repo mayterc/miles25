@@ -27,19 +27,17 @@ body {
 
 /* Header */
 .header {
-    background: var(--azul-oscuro);
+    /* background: var(--azul-oscuro); */
     position: sticky;
     top: 0;
-    display: block;
-    width: 100vh;
-    
-}
-
-.header-content {
+    height: 5rem;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+        background-color: var(--azul-oscuro);
 }
+
 
 .logo {
     max-height: 8rem;
@@ -49,9 +47,11 @@ body {
 .nav {
     display: flex;
     gap: 2.5rem;
+ 
 }
 
 .nav a {
+   
     color: var(--blanco);
     text-decoration: none;
     font-weight: 500;
@@ -80,15 +80,21 @@ body {
 .hero {
     color: var(--blanco);
     text-align: center;
-    background-image: url("/assets/camion-blanco.png");
+    background-image: url("/assets/camion-gris-miles.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    height: 100%;
-    padding: 8rem;
+    background-size:cover;
+    opacity: 0.8;
+    min-height: 100vh;
+    height: 80%;
 }
-      
-    
+
+.hero-content{
+    display: block;
+    text-align: left;
+    padding: 8rem;
+    width: 50%;
+}
 
 .hero h1 {
     font-size: var(--font-xl);
@@ -105,11 +111,10 @@ body {
 /* About Section */
 .about{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 50% 50%;
 }
 .about-miles {
-    grid-column: 1/4;
-    padding-block: 3rem;
+    
     background: var(--azul-oscuro);
     color: var(--blanco);
     padding: 2rem;
@@ -117,8 +122,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-
-
 }
 
 

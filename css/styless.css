@@ -1,6 +1,6 @@
 :root {
     --azul-principal: #0a4158;
-    --gris: #939499;
+    --gris: #9d9d9e;
     --azul-oscuro: #070d19;
     --blanco: #ffffff;
     --btn:#cf9a44;
@@ -105,7 +105,7 @@ nav button{
     font-size: 2.5rem;
     color: var(--blanco);
 }
-.hero-content{
+.hero-content, .num-tel{
     color:var(--blanco);
 }
 .hero-title, .hero-title2{
@@ -115,11 +115,14 @@ nav button{
 .hero-title2{
     color:var(--azul-oscuro);
     padding-bottom: 2rem;
-    
     font-size: var(--font-h1);
 }
-.hero-text{
+.hero-text, .num-tel{
     font-size: var(--font-p);
+}
+.num-tel{
+    text-align: right;
+    margin-right: 15rem;
 }
 .cotizar{
     background: var(--azul-oscuro);
@@ -161,6 +164,7 @@ nav button{
     color:var(--blanco);
     transform: translateY(-5px);
 }
+
 .about{
     width: 100%;
     height: 38rem;
@@ -182,25 +186,75 @@ nav button{
     margin-top: 2.5rem;
     margin-left: -3rem;
 }
-.about h2{
+.about h2, .service h2{
     font-size: var(--font-h2);
 }
-.about p, .services .services-text, .texto_carrusel{
+.about p, .nosotros .nosotros-text, .texto_carrusel, .lista-servicios{
     font-size: var(--font-p);
 }
-strong {
+strong, .services-title {
     color: var(--btn);
 }
-.services {
+.nosotros {
     margin-block: 4rem 2rem ;
     color:var(--azul-oscuro);
 }
-.services h2, .carrusel h2{
+.nosotros h2, .carrusel h2{
     text-align: center;
     font-size: var(--font-h2);
 }
-.services .services-text, .texto_carrusel{
+.nosotros .nosotros-text, .texto_carrusel{
 text-align: center;
+}
+
+.service{
+ display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 4rem;
+/* margin-left: -3rem; */
+/* box-shadow: 40px -10px var(--azul-oscuro); */
+/* background-color: #cf9a44; */
+/* width: 100%; */
+}
+.title-box{
+    background-color: var(--azul-oscuro);
+        padding: 2rem 0 2rem 3rem;
+    /* padding-left: 3rem; */
+        /* border-radius: 0 25px 0 0; */
+    margin-bottom: 1.5rem;
+
+}
+.parrafo{
+    color: var(--gris);
+}
+.services{
+    height: 35rem;
+    width: 100%;
+    /* border-radius: 0 5% 20% 0; */
+    /* border: solid 1px var(--azul-oscuro); */
+}
+
+.cotizar-btn{
+    background-color: var(--btn);
+    color: var(--azul-oscuro);
+    border: solid 1px var(--azul-oscuro);
+    font-size: var(--font-btn);
+    margin-left: 3rem;
+
+}
+.lista-servicios{
+    margin: 1rem 0 2rem 3rem
+}
+.lista-servicios li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.lista-servicios li i{
+    margin-right: 1rem;
+    color: var(--azul-oscuro);
+    font-size:large;
 
 }
 .cards {
@@ -221,62 +275,86 @@ text-align: center;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    position: relative;
 
 }
 .card i{
-    font-size: 4rem;
+    font-size: 4.8rem;
+}
+.card .p-nosotros{
+    height: 10rem;
 }
 .carrusel{
 width:100%;
+/* background-color: #939499; */
 overflow:hidden;
 position:relative;
 padding: 4rem;
 /* background-color: #0a4158; */
+/* overflow:hidden; */
 }
 
+.amarillo{
+    position: absolute;
+    color: var(--btn);
+    z-index: 10;
+    top:8%;
+    left: 36%;
+
+}
 .track{
 display:flex;
 transition:transform .6s ease;
 }
 
 .card-carrusel{
-min-width:20rem;
+width:15rem;
+/* height: 10rem; */
 margin:1rem;
-background:white;
+/* background:var(--azul-oscuro); */
 border-radius:1rem;
 box-shadow:0 .5rem 1.5rem rgba(0,0,0,.15);
 /* overflow:hidden; */
 flex-shrink:0;  
+display: flex;
+align-items: center;
 }
 .texto_carrusel{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .img-carrusel{
-width: 100%;
-height:12rem;
+width: 100%;;
 object-fit:cover;
+
 }
 
-
-/* 
-.card-content{padding:1.2rem}
-.card h3{color:var(--dark);margin-bottom:.5rem}
-.card p{color:#555;font-size:.95rem} */
-/* Contact Section */
 .contact {
-    padding-block: 2rem;
-    background: var(--azul-principal);
-    text-align: center;
-    color: var(--blanco);
+    width: 100%;
+    padding: 2rem;
+    background: var(--azul-oscuro);
+    color: var(--blanco); 
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
+.logo-miles{
+    width: 20rem;
+}
+.logo-contacto{
+    width: 100%;
+}
+.contactos{
+    gap: 1rem;
+}
+
 
 /* Footer */
 .footer {
     padding-block: 1rem;
     text-align: center;
-    background: var(--azul-oscuro);
-    color: var(--gris);
+    background: var(--btn);
+    color: var(--azul-oscuro);
 }
 
 /* DISEÑO PARA TABLET */
@@ -321,8 +399,9 @@ object-fit:cover;
     header{
         width: 100%;
         justify-content: space-between;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        /* padding-left: 1.5rem; */
+        /* padding-right: 1.5rem; */
+        padding: 1.5rem;
     }
     .logo{
         max-height: 4.5rem;
@@ -330,45 +409,79 @@ object-fit:cover;
     .hero-image{
         height: 100vh;
         width: 100%;
+        background-image: url("/assets/camion-gris-miles-mobile.png");
+        /* background-position: center center; */
+
+
     }
     .hero-content{
         width: 80%;
         top:25%;
     }
-    .hero-content h1{
-        font-size: 110%;
-    }
-    
 
+    .hero-content h1, 
+    .title-box .services-title{ 
+        font-size: 120%;
+    }
+    .about-miles{
+        padding: 2rem;
+    }
+    .service{
+        flex-direction: column-reverse;
+        margin:0;
+        margin-top: -0.4rem;
+    }
     .nav-toggle {
     display: block;
     background: none;
     border: none;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--blanco);
 }
-.hero-content .hero-text, .about-miles h2, .about-miles .about-text{
+.nav{
+    flex-wrap: wrap;
+} 
+/* me quede aqui/ hacer que ocupe toda la pantalla */
+    .nav-open {
+        display: flex;
+
+        background-color: var(--azul-oscuro);
+        justify-content: right;
+        align-items: left;
+        width: 100%;
+        /* height: 100%; */
+        z-index: 1;
+
+    }
+
+.hero-content .hero-text, .about-miles h2, .about-miles .about-text,
+    .nosotros .nosotros-text, .card h3, .clientes .texto_carrusel
+{
     font-size: 100%;
 }
+
     .about{
         flex-direction: column;
         height: 100%;
-        
     }
     .about-miles{
         width: 100%;
     }
-
-    .about-image{
+    .about-image, .camiones-miles{
         height: 100%;
         width: 100%;
         margin: 0;
-    
     }
     .cards {
         grid-template-columns: 1fr;
     }
+    .lista-servicios{
+        margin: 2rem;
+        padding: 0.5rem 0 0.5rem 0    }
+    .lista-servicios li, .title-box .parrafo, .texto_carrusel{
+        font-size: 80%;
 
+    }
     .btn {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
@@ -377,4 +490,17 @@ object-fit:cover;
         grid-template-columns: 1fr;
     }
     .card{min-width:85%}
+    .carrusel{
+     padding: 1rem;
+    }
+    .card-carrusel{
+        width: 90%;
+        margin: 0.5rem;
+    }
+    .contact{
+        /* flex-direction: column; */
+    }
+    .logo-contacto{
+        width: 80%;
+    }
 }

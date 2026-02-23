@@ -1,127 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MILES 25 | Transporte & Logística</title>
-    <link rel="stylesheet" href="./css/styless.css">
-    <link rel="icon" type="image/x-icon" href="./assets/miles-favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<section class="hero">
-    <div class="hero-image"></div>
-    <header class="header">
-        <img src="./assets/miles25-logo.png" alt="MILES 25 Logo" class="logo">
-        <nav class="nav">
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-            <button class="cotizar btn"> Cotizar</button>
+    <link rel="stylesheet" href="./css/styless.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/miles-favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-image">
+        <div class="num-tel">📞Cel: 722 156 60 21</div>
+      </div>
+      <header class="header">
+        <img src="./assets/miles25-logo.png" alt="MILES 25 Logo" class="logo" />
+        <nav class="nav .nav-open">
+          <a href="#">Inicio</a>
+          <a href="#">Servicios</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Contacto</a>
+          <button class="cotizar btn">Cotizar</button>
         </nav>
-        
+
         <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-    </header>
-</section>
+      </header>
+    </section>
 
     <div class="hero-content">
-        <h1 class="hero-title">Operamos con seguridad,</h1>
-        <h1 class="hero-title2">Entregamos con confianza.</h1>
-        <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere amet ducimus ipsa libero non earum hic temporibus est tempora neque facilis minima</p>
-        <br><br>
-        <a href="#" class="btn btn-primary-wh">Cotizar vía Whatsapp</a>
+      <h1 class="hero-title">Operamos con seguridad,</h1>
+      <h1 class="hero-title2">Entregamos con confianza.</h1>
+      <p class="hero-text">
+        ¿Necesitas hacer un traslado de mercancia? Somos tu mejor opción de
+        renta de transporte
+      </p>
+      <br /><br />
+      <a href="#" class="btn btn-primary-wh">Cotizar vía Whatsapp</a>
     </div>
 
-<section class="about">
-        <div class="about-miles">
-            <h2>Soluciones logísticas confiables</h2>
-            <p class="about-text">  
-            En <strong class="miles">MILES 25 Logístic S.A. de C.V.</strong> tenemos el compromiso de otorgar el servicio de transporte de carga con la mayor responsabilidad, rapidez y eficiencia en todo el territorio nacional, para lo cual se cuenta con unidades en condiciones óptimas para la prestación de dicho servicio; mismas que están sujetas a un constante mantenimiento.
-            </p>
-            <a href="#" class="btn btn-secondary">Más sobre nosotros</a>
+    <section class="about">
+      <div class="about-miles">
+        <h2>¿Quiénes Somos?</h2>
+        <p class="about-text">
+          En
+          <strong class="miles">MILES 25 Logístic S.A. de C.V.</strong> tenemos
+          el compromiso de otorgar el servicio de transporte de carga con la
+          mayor responsabilidad, rapidez y eficiencia en todo el territorio
+          nacional, para lo cual se cuenta con unidades en condiciones óptimas
+          para la prestación de dicho servicio; mismas que están sujetas a un
+          constante mantenimiento.
+        </p>
+      </div>
+      <div class="about-image">
+        <img
+          src="./assets/tres-camiones.png"
+          alt="tres-camiones-mailes"
+          class="camiones-miles"
+        />
+      </div>
+    </section>
+    <section class="service">
+      <div class="slider">
+        <div class="slider-img">
+          <img id="1" src="/assets/camion-azul.png" alt="camion azul" class="img-service"/>
+          <img id="2" src="/assets/camion-gris-b.png" alt="camion gris" class="img-service"/>
+          <img id="3" src="/assets/mantenimiento.jpg" alt="mantenimiento" class="img-service"/>
+          <img id="4" src="/assets/camion-blanco-paisaje.png" alt="camion-blanco-paisaje" class="img-service"/>
         </div>
-        <div class="about-image">
-            <img src="./assets/tres-camiones.png" alt="tres-camiones-mailes" class="camiones-miles">
+        <div class="manejadores">
+          <a href="#1"></a>
+          <a href="#2"></a>
+          <a href="#3"></a>
+          <a href="#4"></a>
         </div>
-</section>
-
-<section class="services">
-    <h2>Nuestros Servicios</h2>
-    <p class="services-text">Compromiso, seguridad y eficiencia en cada operación</p>
-    <div class="cards">
-        <div class="card">
-            <i class="fa-solid fa-truck"></i>
-            <h3>Transporte de Carga</h3>
-            <p>Movemos su mercancía de forma segura y eficiente en todo momento.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-clipboard-list"></i>
-            <h3>Logística Integral</h3>
-            <p>Planeación y control de la cadena logística con altos estándares.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-building-columns"></i>
-            <h3>Almacenamiento Seguro</h3>
-            <p>Espacios controlados para la protección de su carga.</p>
-        </div>
-    </div>
-</section>
-<section class="nosotros">
-
-
-</section>
-    <div class="carrusel">
-        <h2 class="clientes">Nuestros clientes</h2>
-        <p class="texto_carrusel">Hemos laborado de la mano con grandes empresas, dando resultados eficientes, su confianza nos respalda</p>
-        <div class="track" id="track">
-            <div class="card-carrusel">
-                <img class="img-carrusel" src="assets/Bimbo.png">
-            </div>
-            <div class="card-carrusel">
-                <img class="img-carrusel" src="assets/dulces_vero.png">
-            </div>
-            <div class="card-carrusel">
-                <img class="img-carrusel femsa" src="assets/femsa.jpg">
-            </div>  
-            <div class="card-carrusel">
-                <img class="img-carrusel"  src="assets/ricolino.png">
-            </div>
-            <div class="card-carrusel">
-                <img class="img-carrusel" src="assets/tia_rosa.png">
-            </div>
-            <div class="card-carrusel">
-                <img class="img-carrusel" src="assets/totis.jpg">
-            </div>
-        </div>
+      </div>
+      <div class="services">
+        <div class="title-box">
+        <h2 class="services-title">Ofrecemos el mejor servicio</h2>
+        <p class="parrafo"><i>Garantizamos seguridad y puntualidad</i></p>
 </div>
-<section class="contact container">
-    <h2>Contáctenos</h2>
-    <p class="contact-info">📞 +52 55 1234 5678 | ✉ contacto@miles25.com</p>
-</section>
+        <ol class="lista-servicios">
+          <li class="list">        
+            <i class="fa-solid fa-truck"></i> Transporte de carga vía terreste
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-clock"></i>Disponibilidad 24/7 los 365 días
+            del año
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-screwdriver-wrench"></i>Mantenimiento
+            constante de nuestras unidades
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-map-location"></i> Cobertura a toda la
+            republica
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-crosshairs"></i>Rastreo con GPS
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-heart"></i>Seguro que protege su mercancia
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-file-pdf"></i>Realizamos factura de su
+            traslado
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-user-check"></i> Nos adaptamos a tus
+            necesidades
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-hand-holding-dollar"></i>Cotizaciones
+            accesibles
+          </li>
+        </ol>
+        <a href="#" class="btn cotizar-btn">Solicitar Cotización </a>
+      </div>
+    </section>
 
-<footer class="footer container">
-    <p>© 2026 MILES 25 Transporte & Logística S.A. de C.V. | Todos los derechos reservados</p>
-</footer>
+    <section class="nosotros">
+      <h2>Nosotros</h2>
+      <p class="nosotros-text">
+        Compromiso, seguridad y eficiencia en cada operación
+      </p>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-hand-holding-heart "></i>
+          <i class="fa-solid fa-hand-holding-heart amarillo"></i>
+          <h3>Misión</h3>
+          <p class="p-nosotros">
+            Brindar tranquilidad y confianza a nuestros clientes de que su
+            pedido llegará a tiempo en óptimas condiciones con la
+            responsabilidad y puntualidad que nos caracteriza.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <i class="fa-solid fa-lightbulb amarillo"></i>
+          <h3>Visión</h3>
+          <p class="p-nosotros">
+            Ser una empresa referente en el ramo del transporte de carga de la
+            zona norte de Estado de México y seguir creciendo dentro del sector
+            de la mano de nuestro clientes y amigos para brindar servicio
+            nacional e internacional.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star amarillo"></i>
+          <h3>Compromiso</h3>
+          <p class="p-nosotros">
+            Lograr la satisfacción de nuestro clientes, brindándoles la mejor
+            prestación de nuestro, entregando resultados con responsabilidad y
+            eficiencia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="carrusel">
+      <h2 class="clientes">Nuestros clientes</h2>
+      <p class="texto_carrusel">
+        Hemos laborado de la mano con grandes empresas, dando resultados
+        eficientes, su confianza nos respalda
+      </p>
+      <div class="track" id="track">
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/Bimbo.png" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/dulces_vero.png" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel femsa" src="assets/femsa.jpg" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/ricolino.png" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/tia_rosa.png" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/totis.png" />
+        </div>
+        <div class="card-carrusel">
+          <img class="img-carrusel" src="assets/solistica.jpg" />
+        </div>
+      </div>
+    </div>
+    <section class="contact">
+      <div class="logo-miles">
+        <img
+          class="logo-contacto"
+          src="/assets/miles25-logo.png"
+          alt="logo-alterno-miles"
+        />
+      </div>
+      <div class="contactos">
+        <h2>Contáctenos</h2>
+        <p class="contact-dire">
+          <i class="fa-solid fa-location-dot"></i> San Felipe del Progreso,
+          Atlacomulco
+        </p>
+        <p class="contact-tel">
+          <i class="fa-solid fa-phone"></i> 722 156 60 21
+        </p>
+        <p class="contact-correo">
+          <i class="fa-solid fa-envelope"></i> jase23@yahoo.com.mx
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <p>
+        © 2026 MILES 25 LOGISTIC S.A. de C.V. | Todos los derechos reservados
+      </p>
+    </footer>
 
     <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-        document.querySelector('.nav').classList.toggle('nav-open');
-    });
-    const track=document.getElementById('track');
-    let index=0;
+      document.querySelector(".nav-toggle").addEventListener("click", () => {
+        document.querySelector(".nav").classList.toggle("nav-open");
+      });
+      const track = document.getElementById("track");
+      let index = 0;
 
-
-    function moveCarousel(){
-    const cards=document.querySelectorAll('.card');
-    const cardWidth=cards[0].offsetWidth + 32; // margin
-    index++;
-    if(index>=cards.length){index=0}
-    track.style.transform=`translateX(-${index*cardWidth}px)`;
-    }
-
-
-setInterval(moveCarousel,3000);
-</script>
-</body>
+      function moveCarousel() {
+        const cards = document.querySelectorAll(".card");
+        const cardWidth = cards[0].offsetWidth + 32; // margin
+        index++;
+        if (index >= cards.length) {
+          index = 0;
+        }
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+      }
+      setInterval(moveCarousel, 3000);
+    </script>
+  </body>
 </html>

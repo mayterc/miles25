@@ -41,12 +41,12 @@ body {
 .hero-image{
     height: 100vh;
     /* background-color: #070d19; */
-    background-image: url("/assets/camion-gris-miles.png");
+    background-image: url("../assets/camion-gris-miles.png");
     background-size:cover;
     background-position: center bottom;
 
 }
-/* .hero-image::before{
+.hero-image::before{
     content: "";
     width: 100%;
     height: 100%;
@@ -55,7 +55,7 @@ body {
     right: 0;
     background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);
     opacity: 0.5;
-} */
+}
 
 header{
     /* background-color: var(--azul-oscuro); */
@@ -78,7 +78,22 @@ nav{
     display: flex;
     justify-content:end;
     gap: 2rem;
+    /* position: sticky;
+    top:0;
+    animation: scroll-transition;
+    animation-timeline:scroll(y) ; */
 }
+/* @keyframes scroll-transition{
+    0.1%{
+        background-color:var(--azul-oscuro);
+        color: var(--blanco)
+    }
+    100%{
+         background-color:var(--azul-oscuro);
+        color: var(--blanco)
+    }
+
+} */
 nav a{
     color: var(--blanco);
     text-decoration: none;
@@ -123,7 +138,7 @@ nav button{
     text-align: right;
     margin-right: 15rem;
 }
-.cotizar{
+.cotizar, .llamar{
     background: var(--btn);
     color: var(--azul-oscuro);
     font-family: var(--fuente);
@@ -133,16 +148,17 @@ nav button{
     display: flex;
     align-items: center;
 }
-.cotizar i{
+.llamar i{
     font-size:large;
     padding-right: 1rem;
 }
-.cotizar:hover{
+.cotizar:hover, .llamar:hover{
     background-color: var(--azul-oscuro);
     color: var(--blanco);
-
 }
-
+.llamar{
+    display: none;
+}
 .hero-content{
     position: absolute;
     width: 40%;
@@ -260,8 +276,6 @@ margin-top: 4rem;
 .lista-servicios li{
     list-style-type: none;
     margin-bottom: 1rem;
-
-
 }
 
 .lista-servicios li i{
@@ -425,7 +439,7 @@ object-fit:cover;
     .hero-image{
         height: 100vh;
         width: 100%;
-        background-image: url("/assets/camion-gris-miles-mobile.png");
+        background-image: url("../assets/camion-gris-miles-mobile.png");
         /* background-position: center center; */
     }
     .hero-content{
@@ -466,7 +480,6 @@ object-fit:cover;
 /* me quede aqui/ hacer que ocupe toda la pantalla */
     .nav-open {
         display: flex;
-
         background-color: var(--azul-oscuro);
         justify-content: right;
         align-items: left;
@@ -481,7 +494,14 @@ object-fit:cover;
 {
     font-size: 100%;
 }
-
+.num-tel{
+    display: none;
+}
+.llamar{
+    display: block;
+    width: 30%;
+    /* margin-top: 1rem; */
+}
     .about{
         flex-direction: column;
         height: 100%;

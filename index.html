@@ -31,11 +31,14 @@
           <a href="#servicios">Servicios</a>
           <a href="#nosotros">Nosotros</a>
           <a href="#contacto">Contacto</a>
-          <a href="tel:7221566021" class="cotizar btn"><i class="fa-solid fa-phone"></i> Llamar</a>
+          <a href="#cotizar" class="cotizar btn">Cotizar</a>
+
         </nav>
 
         <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        
       </header>
+
     </section>
 
     <div  class="hero-content">
@@ -238,11 +241,8 @@
       let index = 0;
       function moveCarousel() {
       const cards = document.querySelectorAll(".card");
-       if (window.matchMedia("(max-width: 768px)").matches) {
-       const cardWidth = cards[0].offsetWidth + 300; // margin
-       } else{
-        const cardWidth = cards[0].offsetWidth + 5; // margin
-       }
+      // const cardWidth = cards[0].offsetWidth + 300; // margin
+      const cardWidth = cards[0].offsetWidth + 5; // margin
       index++;
         if (index >= cards.length) {
           index = 0;

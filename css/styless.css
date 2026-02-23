@@ -54,7 +54,7 @@ body {
     top: 0;
     right: 0;
     background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 header{
@@ -403,19 +403,24 @@ object-fit:cover;
         padding: 1.5rem;
     }
     .logo{
-        max-height: 4.5rem;
+        max-height: 4rem;
     }
     .hero-image{
         height: 100vh;
         width: 100%;
         background-image: url("/assets/camion-gris-miles-mobile.png");
         /* background-position: center center; */
-
-
     }
     .hero-content{
         width: 80%;
-        top:25%;
+        top:20%;
+    }
+    .hero-title2{
+        padding-bottom: 0.5rem;
+    }
+    .hero-content .btn-primary-wh{
+        margin-left: 3.5rem;
+        margin-top: -20rem;
     }
 
     .hero-content h1, 

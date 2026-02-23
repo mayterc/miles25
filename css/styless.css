@@ -40,11 +40,10 @@ body {
 }
 .hero-image{
     height: 100vh;
-    background-color: #070d19;
+    /* background-color: #070d19; */
     background-image: url("/assets/camion-gris-miles.png");
     background-size:cover;
     background-position: center bottom;
-
 
 }
 .hero-image::before{

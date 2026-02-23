@@ -241,6 +241,7 @@ margin-top: 4rem;
 .services{
     height: 35rem;
     width: 100%;
+    margin: 2rem 0 3rem 0;
     /* border-radius: 0 5% 20% 0; */
     /* border: solid 1px var(--azul-oscuro); */
 }
@@ -258,7 +259,9 @@ margin-top: 4rem;
 }
 .lista-servicios li{
     list-style-type: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+
+
 }
 
 .lista-servicios li i{

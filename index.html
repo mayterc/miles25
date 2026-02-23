@@ -72,10 +72,10 @@
     <section  class="service">
       <div class="slider">
         <div class="slider-img">
-          <img id="1" src="/assets/camion-azul.png" alt="camion azul" class="img-service"/>
-          <img id="2" src="/assets/camion-gris-b.png" alt="camion gris" class="img-service"/>
-          <img id="3" src="/assets/mantenimiento.jpg" alt="mantenimiento" class="img-service"/>
-          <img id="4" src="/assets/camion-blanco-paisaje.png" alt="camion-blanco-paisaje" class="img-service"/>
+          <img id="1" src="./assets/camion-azul.png" alt="camion azul" class="img-service"/>
+          <img id="2" src="./assets/camion-gris-b.png" alt="camion gris" class="img-service"/>
+          <img id="3" src="./assets/mantenimiento.jpg" alt="mantenimiento" class="img-service"/>
+          <img id="4" src="./assets/camion-blanco-paisaje.png" alt="camion-blanco-paisaje" class="img-service"/>
         </div>
         <div class="manejadores">
           <a href="#1"></a>
@@ -232,11 +232,17 @@
       document.querySelector(".nav-toggle").addEventListener("click", () => {
       document.querySelector(".nav").classList.toggle("nav-open");
       });
+
+  
       const track = document.getElementById("track");
       let index = 0;
       function moveCarousel() {
       const cards = document.querySelectorAll(".card");
-       const cardWidth = cards[0].offsetWidth + 5; // margin
+       if (window.matchMedia("(max-width: 768px)").matches) {
+       const cardWidth = cards[0].offsetWidth + 300; // margin
+       } else{
+        const cardWidth = cards[0].offsetWidth + 5; // margin
+       }
       index++;
         if (index >= cards.length) {
           index = 0;

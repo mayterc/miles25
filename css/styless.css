@@ -155,7 +155,9 @@ nav button{
     font-weight:800;
     border-radius: 10px;
     padding: 0.8rem;
-
+    position:absolute;
+    top:55%;
+    margin: 8rem;
 
 }
 .btn-primary-wh:hover{
@@ -191,6 +193,10 @@ nav button{
 .about p, .nosotros .nosotros-text, .texto_carrusel, .lista-servicios{
     font-size: var(--font-p);
 }
+.about-text, .p-nosotros{
+    text-align: justify;
+}
+
 strong, .services-title {
     color: var(--btn);
 }
@@ -282,6 +288,9 @@ margin-top: 4rem;
 }
 .card .p-nosotros{
     height: 10rem;
+}
+.p-nosotros{
+ padding: 0.5rem 1rem 0.5rem 1rm;   
 }
 .carrusel{
 width:100%;
@@ -418,9 +427,10 @@ object-fit:cover;
     .hero-title2{
         padding-bottom: 0.5rem;
     }
-    .hero-content .btn-primary-wh{
-        margin-left: 3.5rem;
-        margin-top: -20rem;
+    .btn-primary-wh{
+    top:85%;
+    left: 25%;
+    margin: 0;
     }
 
     .hero-content h1, 
@@ -482,9 +492,8 @@ object-fit:cover;
     .lista-servicios{
         margin: 2rem;
         padding: 0.5rem 0 0.5rem 0    }
-    .lista-servicios li, .title-box .parrafo, .texto_carrusel{
+    .lista-servicios li, .title-box .parrafo, .texto_carrusel, .card .p-nosotros{
         font-size: 80%;
-
     }
     .btn {
         padding: 0.4rem 0.8rem;
@@ -492,8 +501,17 @@ object-fit:cover;
     }
     .cards {
         grid-template-columns: 1fr;
+        margin: 0;
     }
-    .card{min-width:85%}
+    .card{
+        min-width:100%;
+        padding: 1rem
+    }
+    .amarillo{
+    top:6%;
+    left: 34%;
+
+}
     .carrusel{
      padding: 1rem;
     }

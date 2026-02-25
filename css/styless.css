@@ -356,8 +356,8 @@ margin-left: 1.5rem;
     width: 65rem;
     height: 38rem;
     padding: 2rem;
-    border-radius: 2rem;
-      line-height: 1.5;
+    border-radius: 0.5rem;
+    line-height: 1.5;
 }
 .cotizacion-contactos{
 width: 35rem;
@@ -382,6 +382,9 @@ border-radius: 2rem 0 0 2rem;
 .title-sol{
     padding: 1rem 0 .5rem 1rem;
 }
+    .txt-cotizacion{
+        padding: 1rem 0 2rem 1.5rem;
+    }
 .formulario-c input, .formulario-c textarea{
     background-color: rgba(150, 183, 252, 0.3);
     border-radius: 0.3rem;
@@ -392,10 +395,14 @@ border-radius: 2rem 0 0 2rem;
 .btn{
     background-color: #cf9a44;
 }
+
+.btn-form{
+    margin-top: 1.5rem;
+}
 .img-cot{
     width: 8rem;
     position:absolute;
-    right: 0%;
+    left: -50%;
 }
 .contact {
     width: 100%;
@@ -586,7 +593,7 @@ border-radius: 2rem 0 0 2rem;
         margin: 0.5rem;
     }
     .background-solicitar-cotizacion{
-      height: 65rem;
+      height: 68rem;
     }
     .cotizacion-contactos{
         width: 100%;
@@ -594,24 +601,25 @@ border-radius: 2rem 0 0 2rem;
     .cotizacion-contactos h2{
         text-align: center;
     }
+
     .solicitar-cotizacion{
         flex-direction: column;
         width: 100%;
         border-radius: 0;
         margin: 0.5rem;
-        height: 63rem;
+        height: 68rem;
         margin: 0;
         padding: 0.5rem;
-        /* padding: 1rem; */
-        /* background-color:rgba(144, 216, 232, 0.01); */
-        /* color: var(--blanco); */
     }
     .formulario-c{
         width: 100%;
     }
     .formulario h2{
-        padding-top: 3rem;
+        padding-top: 2rem;
         text-align: center;
+    }
+    .formulario-c label{
+        padding-top: 0.5rem;
     }
     iframe{
         margin-left: 0;
@@ -623,10 +631,11 @@ border-radius: 2rem 0 0 2rem;
     display: block;
 }
 .btn-form{
+    margin-top: 2.5rem;
     width: 10rem;
 }
     .img-cot{
-        bottom: -15%;
+        bottom: -2%;
     }
     .contact{
         /* flex-direction: column; */

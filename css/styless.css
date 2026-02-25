@@ -26,6 +26,8 @@ body {
 }
 .display{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn{
     padding: 0.5rem 1rem;
@@ -208,7 +210,7 @@ nav button{
     margin-top: 2.5rem;
     margin-left: -3rem;
 }
-.about h2, .service h2{
+.about h2, .service h2, .formulario h2, .contactos h2, .cotizacion-contactos h2{
     font-size: var(--font-h2);
 }
 .about p, .nosotros .nosotros-text, .texto_carrusel, .lista-servicios{
@@ -234,14 +236,7 @@ text-align: center;
 }
 
 .service{
- display: flex;
-align-items: center;
-justify-content: center;
 margin-top: 4rem;
-/* margin-left: -3rem; */
-/* box-shadow: 40px -10px var(--azul-oscuro); */
-/* background-color: #cf9a44; */
-/* width: 100%; */
 }
 .title-box{
     background-color: var(--azul-oscuro);
@@ -297,10 +292,7 @@ margin-top: 4rem;
     padding: 1.5rem;
     border-radius: 0.8rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(7,17,42);
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
     position: relative;
 
@@ -311,17 +303,12 @@ margin-top: 4rem;
 .card .p-nosotros{
     height: 10rem;
 }
-.p-nosotros{
- /* padding: 0.5rem 1rem 0.5rem 1rem;    */
-}
+
 .carrusel{
 width:100%;
-/* background-color: #939499; */
 overflow:hidden;
 position:relative;
 padding: 4rem;
-/* background-color: #0a4158; */
-/* overflow:hidden; */
 }
 
 .amarillo{
@@ -339,9 +326,7 @@ transition:transform .8s ease;
 
 .card-carrusel{
 width:15rem;
-/* height: 10rem; */
 margin:1rem ;
-/* background:var(--azul-oscuro); */
 border-radius:1rem;
 box-shadow:0 .5rem 1.5rem rgba(0,0,0,.15);
 overflow:hidden;
@@ -356,9 +341,62 @@ align-items: center;
 .img-carrusel{
 width: 80%;;
 object-fit:cover;
+margin-left: 1.5rem;
+}
+.background-solicitar-cotizacion{
+    background-image: url("../assets/MassCircles.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: var(--azul-oscuro);
+}
+.solicitar-cotizacion{
+    background-color: var(--blanco);
+    display: flex;
+    width: 65rem;
+    height: 35rem;
+    padding: 2rem;
+    border-radius: 2rem;
+      line-height: 1.5;
+}
+.cotizacion-contactos{
+width: 35rem;
+border-radius: 2rem 0 0 2rem;
 
 }
+.mobile-frame{
+    display: none;
+}
 
+.formulario{
+      border-radius: 0 2rem 2rem 0;
+      position: relative;
+}
+.formulario-c{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 25rem;
+    /* background-color: #0a4158;    */
+}
+.title-sol{
+    padding: 1rem 0 .5rem 1rem;
+}
+.formulario-c input, .formulario-c textarea{
+    background-color: rgba(150, 183, 252, 0.3);
+    border-radius: 0.3rem;
+}
+.formulario-c input{
+    height: 1.7rem;
+}
+.btn{
+    background-color: #cf9a44;
+}
+.img-cot{
+    width: 8rem;
+    position:absolute;
+    right: 0%;
+}
 .contact {
     width: 100%;
     padding: 2rem;
@@ -369,7 +407,7 @@ object-fit:cover;
     justify-content:space-around;
 }
 .logo-miles{
-    width: 20rem;
+    width: 8rem;
 }
 .logo-contacto{
     width: 100%;
@@ -425,7 +463,7 @@ object-fit:cover;
 }
 
 /* Mobile (≤480px) */
-@media (max-width: 30rem) {
+@media (max-width: 35rem) {
     header{
         width: 100%;
         justify-content: space-between;
@@ -547,10 +585,27 @@ object-fit:cover;
         width: 90%;
         margin: 0.5rem;
     }
+    .solicitar-cotizacion{
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        /* height: 100rem; */
+    }
+    iframe{
+        width: 100%;
+        margin-left: 0;
+    }
+    .desktop-frame{
+        display: none;
+    }
+    .mobile-frame{
+    display: block;
+}
     .contact{
         /* flex-direction: column; */
     }
     .logo-contacto{
         width: 80%;
     }
+    
 }

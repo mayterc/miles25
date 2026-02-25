@@ -591,6 +591,9 @@ border-radius: 2rem 0 0 2rem;
     .cotizacion-contactos{
         width: 100%;
     }
+    .cotizacion-contactos h2{
+        text-align: center;
+    }
     .solicitar-cotizacion{
         flex-direction: column;
         width: 100%;

@@ -596,10 +596,19 @@ border-radius: 2rem 0 0 2rem;
         width: 100%;
         border-radius: 0;
         margin: 0.5rem;
-        height: 60rem;
+        height: 63rem;
+        margin: 0;
+        padding: 0.5rem;
+        /* padding: 1rem; */
+        /* background-color:rgba(144, 216, 232, 0.01); */
+        /* color: var(--blanco); */
     }
     .formulario-c{
         width: 100%;
+    }
+    .formulario h2{
+        padding-top: 3rem;
+        text-align: center;
     }
     iframe{
         margin-left: 0;
@@ -610,6 +619,12 @@ border-radius: 2rem 0 0 2rem;
     .mobile-frame{
     display: block;
 }
+.btn-form{
+    width: 10rem;
+}
+    .img-cot{
+        bottom: -15%;
+    }
     .contact{
         /* flex-direction: column; */
     }

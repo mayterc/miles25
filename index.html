@@ -10,8 +10,7 @@
       content="Empresa de servicio de transporte terrestre"
     />
     <meta name="keywords" content="transporte, carga, servicio de transporte" />
-    <!-- <meta property="image" content="./assets/" /> -->
-     <link rel="preload" href="/css/styless.css" as="style">
+    <link rel="preload" href="/css/styless.css" as="style">
     <link rel="stylesheet" href="./css/styless.css" />
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="icon" type="image/x-icon" href="./assets/miles-favicon.png" />
@@ -273,22 +272,23 @@
             method="post"
           >
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required />
+            <input type="text" id="nombre" name="name-cliente" required />
             <label for="phone">Teléfono</label>
-            <input type="text" id="phone" name="phone" required />
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required />
+            <input type="text" id="phone" name="num_cliente" required />
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo_cliente" required />
             <label for="asunto">Asunto</label>
             <input
               type="text"
               id="asunto"
-              name="asunto"
+              name="asunto_cliente"
               placeholder="Cotización/ Queja / Sugerencia"
               required
             />
             <label for="mensaje">Cuéntanos más del servicio que te gustaría cotizar</label>
             <textarea
-              name="mensaje"
+            id="mensaje"
+              name="mensaje_cliente"
               rows="10"
               cols="35"
               placeholder="Escriba su mensaje aquí"

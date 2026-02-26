@@ -507,8 +507,11 @@ border-radius: 2rem 0 0 2rem;
 
 /* Mobile (≤480px) */
 @media (max-width: 35rem) {
-    header{
+
+        header, .hero-image,.nav-open , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
         width: 100%;
+    }
+    header{
         justify-content: space-between;
         /* padding-left: 1.5rem; */
         /* padding-right: 1.5rem; */
@@ -519,7 +522,6 @@ border-radius: 2rem 0 0 2rem;
     }
     .hero-image{
         height: 100vh;
-        width: 100%;
         background-image: url("../assets/camion-gris-miles-mobile.webp");
         background-position: center center;
     }
@@ -558,14 +560,12 @@ border-radius: 2rem 0 0 2rem;
 .nav{
     flex-wrap: wrap;
 } 
-/* me quede aqui/ hacer que ocupe toda la pantalla */
     .nav-open {
         display: flex;
         background-color: var(--azul-oscuro);
         justify-content: right;
         align-items: left;
         width: 100%;
-        /* height: 100%; */
         z-index: 1;
 
     }
@@ -575,7 +575,7 @@ border-radius: 2rem 0 0 2rem;
 {
     font-size: 100%;
 }
-.num-tel{
+.num-tel, .desktop-frame{
     display: none;
 }
 .llamar{
@@ -587,9 +587,7 @@ border-radius: 2rem 0 0 2rem;
         flex-direction: column;
         height: 100%;
     }
-    .about-miles{
-        width: 100%;
-    }
+
     .about-image, .camiones-miles{
         height: 100%;
         width: 100%;
@@ -632,25 +630,20 @@ border-radius: 2rem 0 0 2rem;
     .background-solicitar-cotizacion{
       height: 68rem;
     }
-    .cotizacion-contactos{
-        width: 100%;
-    }
+
     .cotizacion-contactos h2{
         text-align: center;
     }
 
     .solicitar-cotizacion{
         flex-direction: column;
-        width: 100%;
         border-radius: 0;
         margin: 0.5rem;
         height: 68rem;
         margin: 0;
         padding: 0.5rem;
     }
-    .formulario-c{
-        width: 100%;
-    }
+
     .formulario h2{
         padding-top: 2rem;
         text-align: center;
@@ -661,17 +654,9 @@ border-radius: 2rem 0 0 2rem;
     iframe{
         margin-left: 0;
     }
-    .desktop-frame{
-        display: none;
-    }
     .mobile-frame{
     display: block;
 }
-.btn-form{
-    margin-top: 2.5rem;
-    width: 10rem;
-}
-
 
     .logo-contacto{
         width: 80%;

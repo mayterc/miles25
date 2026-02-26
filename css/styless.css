@@ -37,6 +37,15 @@ body {
 .hero{
     position: relative;
 }
+.hero-image::after{
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* background-color: #070d19; */
+    background-image: url("../assets/camion-gris-miles.webp");
+    /* background-size:cover; */
+    /* background-position: center bottom; */
+    display: none;
+}
 .hero-image{
     height: 100vh;
     width: 100%;
@@ -44,8 +53,8 @@ body {
     background-image: url("../assets/camion-gris-miles.webp");
     background-size:cover;
     background-position: center bottom;
-
 }
+
 .hero-image::before{
     content: "";
     width: 100%;
@@ -508,23 +517,28 @@ border-radius: 2rem 0 0 2rem;
 /* Mobile (≤480px) */
 @media (max-width: 35rem) {
 
-        header, .hero-image,.nav-open , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
+    header, .hero-image,.nav-open , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
         width: 100%;
     }
     header{
         justify-content: space-between;
-        /* padding-left: 1.5rem; */
-        /* padding-right: 1.5rem; */
         padding: 1.5rem;
     }
     .logo{
         max-height: 4rem;
     }
+    .hero-image::after{
+        /* height: 100vh; */
+        background-image: url("../assets/camion-gris-miles-mobile.webp");
+        display: none;
+    }
     .hero-image{
         height: 100vh;
         background-image: url("../assets/camion-gris-miles-mobile.webp");
-        background-position: center center;
+
+        /* display: block; */
     }
+
     .hero-content{
         width: 80%;
         top:20%;
@@ -600,7 +614,7 @@ border-radius: 2rem 0 0 2rem;
     .lista-servicios{
         margin: 2rem;
         padding: 0.5rem 0 0.5rem 0    }
-    .lista-servicios li, .title-box .parrafo, .texto_carrusel, .card .p-nosotros{
+    .lista-servicios li, .title-box .parrafo, .texto_carrusel, .card .p-nosotros, footer{
         font-size: 80%;
     }
     .btn {
@@ -661,5 +675,5 @@ border-radius: 2rem 0 0 2rem;
     .logo-contacto{
         width: 80%;
     }
-    
+
 }

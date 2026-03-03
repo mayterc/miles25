@@ -5,7 +5,7 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  /* background-color: brown; */
+  background-color: brown;
   padding: 0 2rem;
   /* color: #ffffff; */
 }

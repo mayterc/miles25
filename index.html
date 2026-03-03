@@ -24,13 +24,9 @@
     />
   </head>
   <body>
-    <section class="hero">
-      <div class="hero-image">
-        <div class="num-tel">📞Cel: 722 156 60 21</div>
-      </div>
-      <header id="inicio" class="header">
+    <header id="inicio" class="header">
         <img src="./assets/miles25-logo.png" alt="MILES 25 Logo" class="logo" />
-        <nav class="nav nav-open">
+        <nav class="nav ">
           <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#nosotros">Nosotros</a>
@@ -40,6 +36,11 @@
 
         <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
       </header>
+    <section class="hero">
+      <div class="hero-image">
+        <div class="num-tel">📞Cel: 722 156 60 21</div>
+      </div>
+      
     </section>
 
     <div class="hero-content">
@@ -80,10 +81,10 @@
     <section class="service display">
         <div id="slider">
 <figure>
-<img src="/assets/camion-azul.webp" alt="">
-<img src="./assets/camion-gris-b.webp" alt="">
-<img src="./assets/mantenimiento.webp" alt="">
-<img src="./assets/camion-blanco-paisaje.webp" alt="">
+<img src="./assets/camion-azul.webp" alt="camion-azul">
+<img src="./assets/camion-gris-b.webp" alt="camion-gris">
+<img src="./assets/mantenimiento.webp" alt="mantenimiento camion">
+<img src="./assets/camion-blanco-paisaje.webp" alt="camion blanco">
 </figure>
 </div>
 
@@ -312,9 +313,15 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
   <script>
+
       document.querySelector(".nav-toggle").addEventListener("click", () => {
         document.querySelector(".nav").classList.toggle("nav-open");
       });
+
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("tansition-scroll", window.scrollY>0)
+      })
       </script>
   </body>
 </html>

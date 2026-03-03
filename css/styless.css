@@ -98,6 +98,9 @@ nav a:hover{
     border-radius: 5px;
     /* text-align: center; */
 }
+.nav.nav-open{
+    display: flex;
+}
 
 .nav-toggle {
     display: none;
@@ -108,13 +111,7 @@ nav a:hover{
 
     
 }
-/* .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2.5rem;
-    color: var(--blanco);
-} */
+
 .hero-content, .num-tel{
     color:var(--blanco);
 }
@@ -423,8 +420,9 @@ border-radius: 2rem 0 0 2rem;
     }
 
     .nav.nav-open {
-        display: flex;
+        /* display: block; */
     }
+
 
     .nav-toggle {
         display: block;
@@ -441,7 +439,7 @@ border-radius: 2rem 0 0 2rem;
 /* Mobile (≤480px) 35rem */
 @media (max-width: 38rem) {
 
-    header, .hero-image,.nav-open , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
+    header, .hero-image , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
         width: 100%;
     }
     header{

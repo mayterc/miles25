@@ -38,18 +38,12 @@ body {
     position: relative;
 }
 .hero-image::after{
-    /* height: 100vh; */
-    /* width: 100%; */
-    /* background-color: #070d19; */
     background-image: url("../assets/camion-gris-miles.webp");
-    /* background-size:cover; */
-    /* background-position: center bottom; */
     display: none;
 }
 .hero-image{
     height: 100vh;
     width: 100%;
-    /* background-color: #070d19; */
     background-image: url("../assets/camion-gris-miles.webp");
     background-size:cover;
     background-position: center bottom;
@@ -90,8 +84,6 @@ nav{
     display: flex;
     justify-content:end;
     gap: 2rem;
-    /* background-color: #070d19; */
-    /* padding: 1rem 1.5rem 1rem ; */
 }
 nav a{
     color: var(--blanco);
@@ -103,7 +95,6 @@ nav a:hover{
     opacity: 0.8;
     color:var(--azul-oscuro);
     border-radius: 5px;
-    /* text-align: center; */
 }
 .nav.nav-open{
     display: flex;
@@ -115,10 +106,6 @@ nav a:hover{
     color: var(--blanco);
     background-color: transparent;
     border: none;
-    /* position: fixed;
-    top:1rem;
-    right: 1rem; */
-
     
 }
 

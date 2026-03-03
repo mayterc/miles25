@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/menuham.css" />
+  </head>
+  <body>
+
+   <header class="main-header" >
+    <img src="./assets/miles25-logo.png" alt="MILES 25 Logo" class="logo" />
+    <nav id="nav" class="main-nav" >
+      <div class="nav-links" >
+        <a class="link-item" href="#" >Inicio</a>
+        <a class="link-item" href="#" >Servicios</a>
+        <a class="link-item" href="#" >Nosotros</a>
+        <a class="link-item" href="#" >Contacto</a>
+        <a class="link-item" href="#" >Cotizar</a>
+      </div>
+    </nav>
+    <button id="button-menu" class="button-menu" >
+   <!-- <button  id="button-menu" class="button-menu" aria-label="Abrir menú">&#9776;</button> -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <script>
+    const toggleButton = document.getElementById('button-menu')
+const navWrapper = document.getElementById('nav')
+
+toggleButton.addEventListener('click',() => {
+  toggleButton.classList.toggle('close')
+  navWrapper.classList.toggle('show')
+})
+
+navWrapper.addEventListener('click',e => {
+  if(e.target.id === 'nav'){
+    navWrapper.classList.remove('show')
+    toggleButton.classList.remove('close')
+  }
+})
+  </script>
+  </body>
+</html>

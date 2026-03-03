@@ -1,0 +1,25 @@
+.gallery{
+    margin-bottom: 4rem;
+}
+.gallery-cell {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+
+}
+
+.gallery-cell img{
+    height: 10rem;
+}
+
+@media (max-width: 30rem) {
+    .gallery-cell{ width: 100%;
+        margin-left: -2rem;
+    }
+    .gallery-cell img{width: 70%;}
+}
+

@@ -10,9 +10,10 @@
       content="Empresa de servicio de transporte terrestre"
     />
     <meta name="keywords" content="transporte, carga, servicio de transporte" />
-    <!-- <link rel="preload" href="/css/styless.css" as="style"> -->
     <link rel="stylesheet" href="./css/styless.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/carrusel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <link rel="icon" type="image/x-icon" href="./assets/miles-favicon.png" />
     <link
       rel="stylesheet"
@@ -29,7 +30,7 @@
       </div>
       <header id="inicio" class="header">
         <img src="./assets/miles25-logo.png" alt="MILES 25 Logo" class="logo" />
-        <nav class="nav .nav-open">
+        <nav class="nav nav-open">
           <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#nosotros">Nosotros</a>
@@ -77,49 +78,15 @@
       </div>
     </section>
     <section class="service display">
-      <!-- <div class="slider">
-        <div class="slider-img">
-          <img
-            id="1"
-            src="./assets/camion-azul.webp"
-            alt="camion azul"
-            class="img-service"
-          />
-          <img
-            id="2"
-            src="./assets/camion-gris-b.webp"
-            alt="camion gris"
-            class="img-service"
-          />
-          <img
-            id="3"
-            src="./assets/mantenimiento.webp"
-            alt="mantenimiento"
-            class="img-service"
-          />
-          <img
-            id="4"
-            src="./assets/camion-blanco-paisaje.webp"
-            alt="camion-blanco-paisaje"
-            class="img-service"
-          />
-        </div> -->
         <div id="slider">
 <figure>
 <img src="/assets/camion-azul.webp" alt="">
 <img src="./assets/camion-gris-b.webp" alt="">
 <img src="./assets/mantenimiento.webp" alt="">
 <img src="./assets/camion-blanco-paisaje.webp" alt="">
-<!-- <img src="https://pixabay.com/static/uploads/photo/2014/09/23/20/13/photography-458050_960_720.jpg" alt=""> -->
 </figure>
 </div>
-        <div class="manejadores">
-          <a href="#1"></a>
-          <a href="#2"></a>
-          <a href="#3"></a>
-          <a href="#4"></a>
-        </div>
-      </div>
+
       <div id="servicios" class="services">
         <div class="title-box">
           <h2 class="services-title">Ofrecemos el mejor servicio</h2>
@@ -209,30 +176,35 @@
         Hemos laborado de la mano con grandes empresas, dando resultados
         eficientes, su confianza nos respalda
       </p>
-      <div class="track" id="track">
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/Bimbo.png" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/dulces_vero.png" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel femsa" src="assets/femsa.jpg" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/ricolino.png" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/tia_rosa.png" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/totis.png" />
-        </div>
-        <div class="card-carrusel">
-          <img class="img-carrusel" src="assets/solistica.jpg" />
-        </div>
+       </div>
+    <div
+      class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'
+    >
+      <div class="gallery-cell">
+        <img class="img-carrusel" src="assets/Bimbo.png" />
       </div>
+      <div class="gallery-cell">
+        <img class="img-carrusel" src="assets/dulces_vero.png" />
+      </div>
+      <div class="gallery-cell">
+        <img class="img-carrusel femsa" src="assets/femsa.jpg" />
+      </div>
+      <div class="gallery-cell">
+        <img class="img-carrusel" src="assets/ricolino.png" />
+      </div>
+      <div class="gallery-cell">
+        <img class="img-carrusel" src="assets/tia_rosa.png" />
+      </div>
+      <div class="gallery-cell">
+       <img class="img-carrusel" src="assets/totis.png" />
+      </div>
+      <div class="gallery-cell">
+       <img class="img-carrusel" src="assets/solistica.jpg" />
+      </div>
+
     </div>
+   
     <section class="background-solicitar-cotizacion display">
       <div  class="solicitar-cotizacion">
         <div class="cotizacion-contactos">
@@ -338,24 +310,11 @@
       </p>
     </footer>
 
-    <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  <script>
       document.querySelector(".nav-toggle").addEventListener("click", () => {
         document.querySelector(".nav").classList.toggle("nav-open");
       });
-
-      const track = document.getElementById("track");
-      let index = 0;
-      function moveCarousel() {
-        const cards = document.querySelectorAll(".card");
-        // const cardWidth = cards[0].offsetWidth + 300; // margin
-        const cardWidth = cards[0].offsetWidth + 5; // margin
-        index++;
-        if (index >= cards.length) {
-          index = 0;
-        }
-        track.style.transform = `translateX(-${index * cardWidth}px)`;
-      }
-      setInterval(moveCarousel, 3000);
-    </script>
+      </script>
   </body>
 </html>

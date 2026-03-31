@@ -460,10 +460,9 @@ border-radius: 2rem 0 0 2rem;
     }
  .hero-image::before{
     /* background: none; */
-    background: linear-gradient(180deg,rgba(6, 0, 16, 0.629) 0%, rgba(25, 25, 97, 0.434) 100%);
-    /* background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%); */
-   
-    opacity: 0.4;
+    background: linear-gradient(180deg,rgba(6, 0, 16, 0.648) 0%, rgba(25, 25, 97, 0.522)100%);
+        /* background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%); */   
+    opacity: 0.3;
 }
 
     .hero-image::after{
@@ -487,7 +486,7 @@ border-radius: 2rem 0 0 2rem;
         padding-bottom: 0.2rem;
     }
     .btn-primary-wh{
-    top:90%;
+    top:92%;
     left: 25%;
     margin: 0;
     }
@@ -509,9 +508,7 @@ border-radius: 2rem 0 0 2rem;
     color: var(--blanco);
 } */
 
-.nav{
-    /* flex-wrap: wrap; */
-} 
+
     .nav-open {
         padding-top: 3rem;
         position: fixed;

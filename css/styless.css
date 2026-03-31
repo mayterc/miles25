@@ -459,7 +459,10 @@ border-radius: 2rem 0 0 2rem;
         padding-left: 0.8rem;
     }
  .hero-image::before{
-    background: linear-gradient(20deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);
+    /* background: none; */
+    background: linear-gradient(180deg,rgba(6, 0, 16, 0.629) 0%, rgba(25, 25, 97, 0.434) 100%);
+    /* background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%); */
+   
     opacity: 0.4;
 }
 

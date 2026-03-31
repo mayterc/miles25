@@ -460,9 +460,9 @@ border-radius: 2rem 0 0 2rem;
     }
  .hero-image::before{
     /* background: none; */
-    background: linear-gradient(180deg,rgba(6, 0, 16, 0.648) 0%, rgba(25, 25, 97, 0.522)100%);
+    background: linear-gradient(180deg, rgba(25, 25, 97, 0.636)0%,rgba(9, 0, 23, 1) 100%);
         /* background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%); */   
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
     .hero-image::after{

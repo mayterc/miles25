@@ -476,7 +476,8 @@ border-radius: 2rem 0 0 2rem;
         Max-height: 95vh;
         background-image: url("../assets/hero3camionesMobile.png");
         
-        background-position: right;
+        background-position: left;
+
     }
 
     .hero-content{

@@ -464,12 +464,12 @@ border-radius: 2rem 0 0 2rem;
         background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);   
     opacity: 0.3;
     width:100%;
-        Max-height: 85vh;
+        Max-height: 90vh;
 }
 
     .hero-image{
         width:100%;
-        Max-height: 85vh;
+        Max-height: 90vh;
         background-image: url("../assets/hero3camionesMobile.png");
         
         background-position: left;

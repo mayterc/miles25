@@ -386,7 +386,7 @@ border-radius: 2rem 0 0 2rem;
     justify-content:space-around;
 }
 .logo-miles{
-    width: 8rem;
+    width: 7rem;
 }
 .logo-contacto{
     width: 100%;
@@ -460,21 +460,14 @@ border-radius: 2rem 0 0 2rem;
     }
  .hero-image::before{
     /* background: none; */
-    background: linear-gradient(180deg, rgba(25, 25, 97, 0.636)0%,rgba(9, 0, 23, 1) 100%);
-        /* background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%); */   
-    opacity: 0.35;
+    /* background: linear-gradient(90deg, rgba(25, 25, 97, 0.636)0%,rgba(9, 0, 23, 1) 100%); */
+        background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);   
+    opacity: 0.3;
 }
 
-    .hero-image::after{
-        /* height: 100vh; */
-        background-image: url("../assets/hero3camionesMobile.png");
-        display: none;
-    }
     .hero-image{
         height: 100vh;
         background-image: url("../assets/hero3camionesMobile.png");
-
-        /* display: block; */
     }
 
     .hero-content{
@@ -486,7 +479,7 @@ border-radius: 2rem 0 0 2rem;
         padding-bottom: 0.2rem;
     }
     .btn-primary-wh{
-    top:92%;
+    top:85%;
     left: 25%;
     margin: 0;
     }
@@ -503,11 +496,6 @@ border-radius: 2rem 0 0 2rem;
         margin:0;
         margin-top: -0.4rem;
     }
-    /* .nav-toggle {
-    font-size: 3rem;
-    color: var(--blanco);
-} */
-
 
     .nav-open {
         padding-top: 3rem;
@@ -521,7 +509,6 @@ border-radius: 2rem 0 0 2rem;
         justify-content:start;
         z-index: 100;
         gap:3rem;
-
     }
 
 .hero-content .hero-text, .about-miles h2, .about-miles .about-text,
@@ -611,9 +598,12 @@ border-radius: 2rem 0 0 2rem;
     .mobile-frame{
     display: block;
 }
-
-    .logo-contacto{
-        width: 80%;
+    .contact{
+        padding: 1.5rem;
     }
 
+    .logo-contacto{
+        padding-right: 0.8rem;
+    }
+    
 }

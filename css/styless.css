@@ -38,10 +38,10 @@ body {
 .hero{
     position: relative;
 }
-.hero-image::after{
+/* .hero-image::after{
     background-image: url("../assets/tres-camiones.webp");
     display: none;
-}
+} */
 .hero-image{
     height: 100vh;
     width: 100%;
@@ -443,7 +443,7 @@ border-radius: 2rem 0 0 2rem;
 /* Mobile (≤480px) 35rem */
 @media (max-width: 38rem) {
 
-     .hero-image , .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
+       .about-miles, .cotizacion-contactos, .solicitar-cotizacion, .formulario-c{
         width: 100%;
     }
     header{
@@ -458,21 +458,25 @@ border-radius: 2rem 0 0 2rem;
         max-height: 3.5rem;
         padding-left: 0.8rem;
     }
+    .hero-image::after{
+    background: none;
+        
+    }
  .hero-image::before{
-    /* background: none; */
+    display: none;
     /* background: linear-gradient(90deg, rgba(25, 25, 97, 0.636)0%,rgba(9, 0, 23, 1) 100%); */
-        background: linear-gradient(90deg,rgba(1, 0, 3, 1) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);   
-    opacity: 0.3;
-    width:100%;
-        Max-height: 90vh;
+        /* background: linear-gradient(260deg,rgba(1, 0, 3, 0.849) 0%, rgba(25, 25, 97, 0.59) 55%, rgba(144, 216, 232, 0.31) 100%);    */
+    /* opacity: 0.3; */
+    /* width:100%; */
+        Max-height: 95vh;
 }
 
     .hero-image{
-        width:100%;
-        Max-height: 90vh;
+   
+        Max-height: 95vh;
         background-image: url("../assets/hero3camionesMobile.png");
         
-        background-position: left;
+        background-position: right;
     }
 
     .hero-content{
@@ -484,7 +488,7 @@ border-radius: 2rem 0 0 2rem;
         padding-bottom: 0.2rem;
     }
     .btn-primary-wh{
-    top:70%;
+    top:85%;
     left: 25%;
     margin: 0;
     }
